@@ -621,6 +621,10 @@ h2 .pull-right select {
   border-right: 1px solid @accent-color;
 }
 
+.pagination-small li > a {
+  border: none !important;
+}
+
 .pagination li > a,
 .pagination li > span {
 	float            : left;
@@ -1179,12 +1183,13 @@ h2.btn-link {
 }
 
 tr.kcontenttablespacer {
-  height: 5px;
+  height: 15px;
   background: @accent-color;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, @accent-color 25%, @accent-color 75%, rgba(255,255,255,0) 75%, rgba(255,255,255,0) 100%);
 }
 
 tr.kcontenttablespacer td {
-  line-height: 5px;
+  line-height: 15px;
   padding: 0px;
 }
 
@@ -1230,4 +1235,14 @@ header {
   height: 32px;
   padding: 0px;
   border-left: none;
+}
+
+#categoryactions > div > ul {
+  width: 100%;
+  margin: 0px;
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+  border-top: 1px solid @accent-color;
+  border-bottom: 1px solid @accent-color;
 }
