@@ -613,14 +613,25 @@ h2 .pull-right select {
 	line-height : 15px !important;
 }
 
-.pagination ul > li > a,
-.pagination ul > li > span {
+.pagination li > a,
+.pagination li > span {
 	float            : left;
 	padding          : 4px 12px;
 	line-height      : 20px;
 	background-color : transparent;
-	border           : 1px solid #dddddd;
 	margin           : 0;
+}
+
+a.disabled {
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: @accent-color;
 }
 
 #recent-topics .span2,
