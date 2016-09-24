@@ -613,6 +613,14 @@ h2 .pull-right select {
 	line-height : 15px !important;
 }
 
+.pagination li > a {
+  border-right: none;
+}
+
+.pagination li:last-child > a {
+  border-right: 1px solid @accent-color;
+}
+
 .pagination li > a,
 .pagination li > span {
 	float            : left;
@@ -620,6 +628,8 @@ h2 .pull-right select {
 	line-height      : 20px;
 	background-color : transparent;
 	margin           : 0;
+  border-color     : @accent-color;
+  border-radius    : 0px;
 }
 
 a.disabled {
@@ -632,6 +642,10 @@ a {
 
 a:hover {
   color: @accent-color;
+}
+
+li.active > a {
+  background: @accent-color;
 }
 
 #recent-topics .span2,
@@ -1157,16 +1171,6 @@ h2.btn-link {
 .pagination a {
   border-radius: 0px;
   border-color: #6f6f6f;
-}
-
-.pagination li:first-child a {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-
-.pagination li:last-child a {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
 }
 
 .table td {
