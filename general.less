@@ -120,7 +120,12 @@ h3 {
 .message {
   border-top: 1px solid #797979;
   padding-top: 10px;
+  padding-bottom: 10px;
 	margin: 0;
+}
+
+.message:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .btn-marging {
@@ -1153,16 +1158,26 @@ h2.btn-link {
 }
 
 .table td {
-  border-top-color: #6f6f6f;
+  border-top: none;
+  border-bottom: none;
 }
 
-.category td:first-child {
-  border-left: 1px solid #6f6f6f;
+tr.category-stickymsg {
+
 }
 
-.category td:last-child {
-  border-right: 2px solid #6f6f6f;
-  border-left: 1px solid #6f6f6f;
+tr.kcontenttablespacer {
+  height: 5px;
+  background: @accent-color;
+}
+
+tr.kcontenttablespacer td {
+  line-height: 5px;
+  padding: 0px;
+}
+
+tr.category:nth-child(even) {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .add-on {
