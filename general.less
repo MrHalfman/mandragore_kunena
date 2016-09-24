@@ -640,16 +640,21 @@ a.disabled {
   color: grey;
 }
 
+li.active > a {
+  color: @accent-color;
+}
+
 a {
   text-decoration: none;
 }
 
-a:hover {
-  color: @accent-color;
+.btn-link:hover {
+  text-decoration: none;
 }
 
-li.active > a {
-  background: @accent-color;
+a:hover {
+  text-decoration: none;
+  color: @accent-color;
 }
 
 #recent-topics .span2,
@@ -1185,7 +1190,7 @@ h2.btn-link {
 tr.kcontenttablespacer {
   height: 15px;
   background: @accent-color;
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, @accent-color 25%, @accent-color 75%, rgba(255,255,255,0) 75%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, @accent-color 40%, @accent-color 60%, rgba(255,255,255,0) 60%, rgba(255,255,255,0) 100%);
 }
 
 tr.kcontenttablespacer td {
@@ -1245,4 +1250,21 @@ header {
   padding-bottom: 10px;
   border-top: 1px solid @accent-color;
   border-bottom: 1px solid @accent-color;
+}
+
+.breadcrumb .divider {
+  display: inline;
+}
+
+.markItUpHeader {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+#tabs_kunena_editor {
+  margin-bottom: 1px;
+  border: none;
+}
+
+input#subject {
+  width: 100%;
 }
