@@ -1,0 +1,6 @@
+index.html
+local/
+node_modules/
+gulpfile.js
+package.json
+.idea/
