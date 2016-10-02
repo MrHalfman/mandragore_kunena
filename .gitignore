@@ -1,6 +1,9 @@
-index.html
+
 local/
 node_modules/
+.idea/
+assets/
+
 gulpfile.js
 package.json
-.idea/
+index.html
