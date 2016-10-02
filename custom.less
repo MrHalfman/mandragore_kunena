@@ -44,18 +44,30 @@ header {
   background-color: #000 !important;
 }
 
-#nav-menu{
-  text-align: center;
-  .center p a.label-default{
-    background-color: transparent;
-  }
+/* Modify menu style hardcore way ! */
+nav.navbar {
+  .navbar-inner{
+    .visible-lg{
+      .nav.pull-right{
+        .dropdown.mobile-user{
+          .dropdown-menu.dropdown-menu-right{
 
-  .btn.btn-link {
-    background-color: transparent !important;
-    color: #f5cb52 !important;
-  }
+            text-align: center;
+            .center p a.label-default{
+              background-color: transparent;
+            }
 
-  #logout-form {
-    float: none;
+            .btn.btn-link {
+              background-color: transparent !important;
+              color: #f5cb52 !important;
+            }
+
+            #logout-form {
+              float: none;
+            }
+          }
+        }
+      }
+    }
   }
 }
