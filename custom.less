@@ -126,14 +126,45 @@ nav.navbar {
   }
 }
 
-.category .inline {
-  margin-bottom: 0;
-}
+.category {
+  .inline {
+    margin-bottom: 0;
+  }
 
-.category .col-md-8 br {
-  display: none;
+  .col-md-8 br {
+    display: none;
+  }
 }
-
 .moderators {
   display: none;
+}
+
+#kwho {
+  .well-small {
+    .col-md-1 {
+      text-align: center;
+    }
+  }
+}
+
+#kstats {
+  .well-small {
+    .col-md-1 {
+      text-align: center;
+    }
+  }
+}
+
+.kfrontend {
+  .section {
+    & > table.table {
+      float: none;
+
+      tbody {
+        tr:first-child {
+          display: none;
+        }
+      }
+    }
+  }
 }
