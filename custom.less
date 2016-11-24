@@ -127,18 +127,28 @@ nav.navbar {
 }
 
 .category {
+  // Fix superfluous style on icons
+  .td a i.icon-big {
+    margin-top: 0;
+    margin-left: 0;
+    padding-right: 0;
+  }
+  // Unnecessary margin
   .inline {
     margin-bottom: 0;
   }
 
+  // Hide useless br
   .col-md-8 br {
     display: none;
   }
 }
+//Hide moderators lines
 .moderators {
   display: none;
 }
 
+// Center icons on footer Membres / Statistiques
 #kwho {
   .well-small {
     .col-md-1 {
@@ -157,12 +167,19 @@ nav.navbar {
 
 .kfrontend {
   .section {
+    // Fix float on table messing with general layout
     & > table.table {
       float: none;
 
       tbody {
+        // Hide header on categories
         tr:first-child {
           display: none;
+        }
+
+        // Vertical align all sections
+        td {
+          vertical-align: middle;
         }
       }
     }
