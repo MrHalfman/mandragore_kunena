@@ -185,3 +185,20 @@ nav.navbar {
     }
   }
 }
+
+div.profile-expand {
+  & > span {
+    display: none !important;
+  }
+  & > div.content {
+    display: inline-block !important;
+
+    & > ul li {
+      display: none;
+    }
+
+    & > ul li:first-child, & > ul li:nth-child(6) {
+      display: block !important;
+    }
+  }
+}
