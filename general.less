@@ -1337,3 +1337,36 @@ a.label {
 .alert p {
   font-size: 16px;
 }
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.kmessage, #kbbcode-preview {
+  table {
+    border: 1px solid #6f6f6f;
+    min-width: 66%;
+  }
+
+  tr:nth-of-type(odd) {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  td {
+    padding: 2px;
+    padding-left: 5px;
+  }
+
+  td:nth-of-type(odd) {
+
+  }
+
+  td:nth-of-type(even) {
+    border-left: 1px solid #6f6f6f;
+    border-right: 1px solid #6f6f6f;
+  }
+
+  td, tr {
+    border: none;
+  }
+}
